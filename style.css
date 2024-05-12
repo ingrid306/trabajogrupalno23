@@ -20,13 +20,12 @@ body {
   padding-bottom: 45px;
   }
 
-  body{
-    background-image: url("../trabajogrupalno23/img/fondoverde.jpg");
+  body {
+    /* background-image: url("../trabajogrupalno23/img/fondoverde.jpg"); */
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size:contain;
-    
+    background-size:contain; 
   }
 
 .header {
