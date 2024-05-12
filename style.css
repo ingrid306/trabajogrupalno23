@@ -20,6 +20,15 @@ body {
   padding-bottom: 45px;
   }
 
+  body{
+    background-image: url("../trabajogrupalno23/img/fondoverde.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:contain;
+    
+  }
+
 .header {
   background-color: var(--ColorEncabezado);
   position: fixed;
@@ -56,6 +65,8 @@ body {
 .logo {
   padding: 10px 20px;
 }
+
+/* Contenedor del Logo-cac */
 
 .header .logo-cac img{
    align-content:center;
@@ -138,7 +149,7 @@ body {
 }
 
 h3 {
-  color: var(--ColorEncabezado);
+  color: var(--ColorFondo);
 }
 
  /***** Footer *****/
@@ -190,3 +201,33 @@ footer {
   padding-left: 30px;
   transition: all 0.3s;
 }      
+
+
+@media (max-width: 530px){
+  
+  .logo-cac{
+    padding: 25px 2px 20px 2px;
+  }
+  .logo-cac a img {
+    width: 70px;
+  }
+
+  .logo{
+    padding: 10px 10px 10px 10px;
+  }
+
+  .nav-menu {
+    display:contents;
+    list-style: none;
+  }
+
+  .nav-menu-item {
+    font-size: 10px;
+    margin: 0px 0px;
+    line-height: 0px; /*se controla  la alineacion vertical!*/
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+  }
+   
+}
