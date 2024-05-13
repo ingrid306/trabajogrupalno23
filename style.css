@@ -228,5 +228,9 @@ footer {
     display: flex;
     align-items: center;
   }
+
+  .derechos p {
+    font-size: 10px
+  }
    
 }
