@@ -3,38 +3,97 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node Codo a Codo - Comision #24127 - grupo #23</title>
-    <link rel="ICON" type="iMAGEN/PNG" href="img/node.ico">
+    <title>Node Codo a Codo - Contacto #24127 - grupo #23</title>
+    <link rel="ICON" type="iMAGEN/PNG" href="../trabajogrupalno23/img/favicon.ico">
     <script src="https://kit.fontawesome.com/b4496fc6c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo-form.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="index.js"></script>
+    <script src="script-form.js" defer></script>
   </head>
-  <body>
+  <body style="background-image: url(../trabajogrupalno23/img/fondoverde.jpg);">
     
     <!--Encabezado-->
 
     <header class="header">
-      <nav class="nav-cabecera">
-        <div class="logo">
-          <img src="img/node.jpeg" alt="Logo marca" />
-        </div>
-       
-        <ul class="nav-menu">
-          <li class="nav-menu-item">
-            <a href="index.html" class="nav-menu-link">Integrantes</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="links.html" class="nav-menu-link">Links</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="contacto.html" class="nav-menu-link">Contacto</a>
-          </li>
-        </ul>
-      </nav>
+      <!-- solid style -->
+      
+          <nav class="nav-cabecera">
+    
+           
+            <div class="logo">
+              <a href="index.html"><img src="../trabajogrupalno23/img/logo node2.png" alt="Logo marca"></a>                
+            </div>   
+            
+            <div class="logo-cac">
+                <a href="https://buenosaires.gob.ar/educacion/codo-codo-40"><img width="140px" src="../trabajogrupalno23/img/logoCACsinbloque.png" alt="CAC"></a>
+            </div>
+            
+    
+            <ul class="nav-menu">
+              <li class="nav-menu-item">
+                <a href="index.html" class="nav-menu-link">Integrantes</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="links.html" class="nav-menu-link">Links</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="contacto.html" class="nav-menu-link">Contacto</a>
+              </li>
+              
+            </ul>
+          </nav>   
+        
     </header>
 
     <!--cuerpo principal-->
-    <main></main>
+    <main>
+      <div class="container">
+        <h2>Contacto</h2>
+        <form id="contactForm" action="#" method="post" onsubmit="return validarFormulario()">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">Seleccionar</option>
+              <option value="consulta">Consulta</option>
+              <option value="queja">Queja</option>
+              <option value="sugerencia">Sugerencia</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="prioridad">Prioridad:</label>
+            <div class="radio-group">
+              <input type="radio" id="alta" name="prioridad" value="alta">
+              <label for="alta">Alta</label>
+              <input type="radio" id="normal" name="prioridad" value="normal" checked>
+              <label for="normal">Normal</label>
+              <input type="radio" id="baja" name="prioridad" value="baja">
+              <label for="baja">Baja</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="adjuntar">Adjuntar imagen:</label>
+            <input type="file" id="adjuntar" name="adjuntar" accept="image/*">
+          </div>
+          <button type="submit" class="enviar-btn">Enviar</button>
+        </form>
+      </div>
+    </main>
 
     <!--pie de pagina-->
 
