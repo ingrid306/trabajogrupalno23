@@ -89,7 +89,6 @@ body {
 }
 
 
-
 /***** Integrantes *****/
 .Integrantes{
   display: flex;
@@ -175,5 +174,9 @@ footer {
   font-size: 14px;
   color: var(--ColorFuente);
   padding-left: 30px
-  transition: all 0.3s;
-}      
+          
+}
+
+.derechos p:hover{ 
+  color: var(--ColorLink);    
+}
