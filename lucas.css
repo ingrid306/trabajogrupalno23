@@ -177,7 +177,7 @@ h3 {
 }
 
 .articulouno{
-  margin: 150px auto
+  margin: 50px auto
 
 }
 
@@ -198,11 +198,13 @@ h3 {
 
 .instantefont{
   font-size: 70px;
-  font-family: Futurist fixed-width;
-  src: url("../trabajogrupalno23/Fontlucas/FUTRFW.TTF");
-  color: whitesmoke;
+  font-family: 'Futurist fixed-width';
+  src: url("../trabajogrupalno23/Fontlucas/FUTRFW.TTF") format(TTF);
 }
 
+.instantefont{
+  color: white;
+}
 
 .articulodos{
   margin: 200px auto
