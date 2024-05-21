@@ -9,6 +9,10 @@
   --ColorFuente: #e3ebc6;
 }
 
+.fondo{
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--ColorFondo);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -169,12 +173,9 @@ h3 {
 /****cuerpo principal****/
 
 main{
-  border: 3px solid  red;
+  /* border: 3px solid  red; */
   height: 3110px;
-  width: 1700px;
-  position: relative;
-  left: 70px; 
-
+  width: 100%px;
 }
 /* .sectionuno{
   display: grid;
@@ -210,10 +211,8 @@ main{
 
 .instantefont{
   font-size: 70px;
-  font-family: 'Futurist fixed-width';
-  src: url("../trabajogrupalno23/Fontlucas/FUTRFW.TTF") format(TTF);
-  position: relative;
-  right: -13%;
+  font-family: "Futurist fixed-width";
+  src: url("../trabajogrupalno23/Fontlucas/FUTRFW.TTF");
 }
 
 .instantefont{
@@ -266,11 +265,11 @@ main{
 
 .youtube{
   border-radius: 15px;
-  width: 900px;
+  width: 800px;
   height: 450px;
   position: relative;
-  left: 150px;
-  top: 79px;
+  left: 50px;
+  top: 38px;
   box-shadow: 2px 2px 10px #000000;
 
 }
@@ -401,15 +400,9 @@ footer {
 
   main{
     /* border: 3px solid  red; */
-    height: 5800px;
-    width: 900px;
-    position: relative;
-    left: 5px;
-  }
-
-  .sectionuno{
+    height: 3110px;
     width: 100%;
-    display:contents;
+    box-sizing: border-box;
   }
 
   .articulouno{
@@ -423,15 +416,15 @@ footer {
     border: 2px;
     box-shadow: 2px 2px 10px #000000;
     border-radius: 10px;
+    margin-right: 0px ;
   }
 
   .instantefont{
-    font-size: 120px;
-    right: 45px;
+    font-size: 40px;
   }
 
   .parrafouno{
-    font-size: 40px;
+    font-size: 20px;
     text-align: justify;
     position: relative;
     top: 10px;
@@ -448,25 +441,25 @@ footer {
   }
   
   .parrafodos {
-    font-size: 40px;
+    font-size: 20px;
     top: 20px;
   }
 
   .fototres{
     width: 100%;
     position: relative;
-    top: 15px;
+    top: 0px;
   }
   
   .parrafotres {
-    font-size: 40px;
+    font-size: 20px;
     top: 20px;
   }
 
   .youtube{
     border-radius: 15px;
     width: 100%;
-    height: 450px;
+    height: 190px;
     position: relative;
     left: 0px;
     top: 40px;
@@ -477,7 +470,7 @@ footer {
   }
 
   .parrafocuatro{
-    font-size: 40px;
+    font-size: 20px;
     top: 70px
   } 
   
