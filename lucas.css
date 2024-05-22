@@ -18,7 +18,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 90px 25px 0;
   padding-bottom: 45px;
-  height: 3110px;
+  height: 3580px;
   display: flex;
   }
 
@@ -211,7 +211,7 @@ main{
 
 .instantefont{  
   font-family: "Futurist fixed-width";
-  src: url("../trabajogrupalno23/Fontlucas/FUTRFW.TTF") format('truetype');
+  src: url(../trabajogrupalno23/Fontlucas/FUTRFW.TTF) format('truetype');
   font-size: 70px;
 }
 
@@ -294,6 +294,32 @@ main{
 .spotify{
   position: relative;
   top: 30px;
+}
+
+.buttons {
+  min-width: 700px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 110px
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #303030;
+  color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
 }
 
 
@@ -520,6 +546,7 @@ footer {
     width: 100%;
     position: relative;
     top: 0px;
+    margin-right: 0px;
   }
   
   .parrafotres {
