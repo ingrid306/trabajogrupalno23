@@ -508,32 +508,10 @@ footer {
     position: relative;
     left: 30px;
     top: 20px;
-
-    /****parte uno****/
-
-  .articulouno{
-    bottom: 20px;
-    top: -20px;
-      
   }
-
-  .fotouno{
+  .card img{
     width: 100%;
-    margin-right: 0px ;
-  }
-
-  .parrafouno{
-    font-size: 20px;
-    top: 10px;
-  }
-
-  .instantefont{
-    text-align: center;
-    font-size: 40px;
-
-  }
-
-  /****fin-parte uno****/
+    height: 400px;
   }
 }
 
@@ -541,10 +519,7 @@ footer {
 
   .nav-cabecera{
     align-items: center;
-  }
-
-  .nav-menu {
-    display:contents;}
+  }    
 
   .nav-menu-item {
     font-size: 10px;
@@ -554,11 +529,39 @@ footer {
     .logos {
       display: flex;
       align-items: center;
+      flex-direction: column;
+      padding-left:15px ;
+  }
+
+    /****prueba***/
+    .logo-node a img{
+      width: 25px;      
+    }
+    .logo-node{
+      padding: 5px 0px 5px 0px;
     }
 
-    .logo-cac img{
-      width: 80px;
+    .logo-cac{
+      padding: 5px 0px 5px 0px;
     }
+    .logo-cac a img {
+      width: 35px;
+    }
+  
+    .nav-menu {
+      display:contents;
+      list-style: none;
+    }
+  
+    .nav-menu-item {
+      font-size: 10px;
+      margin: 0px 0px;
+      line-height: 0px; /*se controla  la alineacion vertical!*/
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+    }
+
 
   main{
     width: 100%;
@@ -702,24 +705,29 @@ footer {
     font-size: 20px;
   }
 
+  .container-card{
+    width: 100% ;
+  }
+
   .card img{
-    width: 100%;
-    height: 380px;
+    width: 100% auto;
+    height:250px;
   }
 
   .contenido-card h3{
     position: relative;
-    bottom: 10px;
+    top: 10px;
   }
 
   .contenido-card a{
     position: relative;
-    bottom: 10px;
+    bottom: 0px;
   }
 
   .card {
     position: relative;
     top: -50px;
+    width: 100%;
 
 }
 }
