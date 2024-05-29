@@ -14,11 +14,11 @@
 }
 
 body {
-  background-color: var(--ColorFondo);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 95px 25px 0;
-  padding-bottom: 45px;
-  }
+background-image: url(img/fondoverde.jpg);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding: 95px 25px 0;
+padding-bottom: 45px;
+}
 
 body {
   /* background-image: url("../trabajogrupalno23/img/fondoverde.jpg"); */
@@ -233,16 +233,4 @@ transition: all 0.3s;
   font-size: 10px
 }
  
-/* Media query para ajustar el margen del contenedor en dispositivos pequeños */
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 400px; /* Ajuste para dispositivos medianos */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    max-width: 300px; /* Ajuste para dispositivos pequeños (móviles) */
-    padding: 10px; /* Reducir el relleno para dispositivos pequeños */
-  }
 }
