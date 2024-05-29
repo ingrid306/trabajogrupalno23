@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+--ColorEncabezado: #7f1794;
+--ColorFuente: #ecf5f1;
+}
+
+.Contenedor {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  /* padding: 5% 15px; */
+}
+
+
+.Titulo {
+  color: var(--ColorEncabezado);
+  /* font-weight: bolder;
+  font-size: 250%; */
+  text-align: center;
+  /* margin-top: 5%; */
+  padding: 5% 5px;  
+
+}
+
+
+.texto {
+  color: var(--ColorEncabezado);
+  text-indent: 25px;
+  line-height: 1.5;
+  /* margin-top: 8%; */
+  padding: 10% 15px; 
+} 
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1500px;
+  }
+
+.gallery img {
+  width: 100%;
+  /* height: 150px; 
+  padding: 10px; */
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 800px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.gallery img:hover {
+  z-index: 9;
+  transform: scale(1.3);
+  cursor: zoom-in;
+  transition: transform ease 0.5s;
+}
+
+.gallery img.full {
+  position: fixed;
+  top: 0; left: 0; z-index: 999;
+  width: 100vw; height: 100vh;
+  object-fit: fit;
+  background: rgba(238, 237, 237, 0.7);
+}
+
+.gallery img.full:hover {
+  z-index: 999;
+  transform: none;
+}
+
+p {
+  color: rgb(227, 236, 229);
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px;
+}
+
+h1 {
+  color: rgb(210, 255, 127);
+  text-align: center;
+  font-size: x-large;
+  margin: 20px; 
+
+
+}
+
+h2 {
+  color: rgb(210, 255, 127);
+  text-align: justify;
+  font-size: x-large;
+  margin: 20px; 
+
+
+}
+
+
+.video-iframe {
+  position: relative;
+  margin: 10px;
+  padding-bottom: 50.25%; /* 16/9 ratio */
+  /* padding: 50px;  */
+  padding-top: 20px; 
+  height: 0;
+  overflow: hidden;
+  
+  }
+  
+  .video-iframe iframe,
+  .video-iframe object,
+  .video-iframe embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  }
+  /* Media query para ajustar el margen del contenedor en dispositivos pequeños */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 400px; /* Ajuste para dispositivos medianos */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 300px; /* Ajuste para dispositivos pequeños (móviles) */
+    padding: 10px; /* Reducir el relleno para dispositivos pequeños */
+  }
+}
