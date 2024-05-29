@@ -14,11 +14,11 @@
 }
 
 body {
-background-image: url(img/fondoverde.jpg);
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-padding: 95px 25px 0;
-padding-bottom: 45px;
-}
+  background-color: var(--ColorFondo);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 95px 25px 0;
+  padding-bottom: 45px;
+  }
 
 body {
   /* background-image: url("../trabajogrupalno23/img/fondoverde.jpg"); */

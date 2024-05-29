@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-image: url(../img/fondoverde.jpg);
 }
 
 .container {
@@ -20,7 +20,7 @@ h2 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: italic;
-  color: yellow; /* Cambio de color de texto para que se vea mejor en el fondo oscuro */
+  color: #e3ebc6; /* Cambio de color de texto para que se vea mejor en el fondo oscuro */
 }
 
 .form-group {
@@ -33,7 +33,7 @@ label {
   font-style: italic;
   font-weight: 400;
   margin-bottom: 5px; /* Ajuste para separar los labels del input */
-  color: yellow; /* Cambio de color de texto para que se vea mejor en el fondo oscuro */
+  color: #e3ebc6; /* Cambio de color de texto para que se vea mejor en el fondo oscuro */
 }
 
 input[type="text"],
@@ -53,7 +53,7 @@ button.enviar-btn {
   display: inline-block; /* Hace que el botón sea de tamaño automático */
   padding: 10px 20px; /* Ajuste para que el botón tenga el ancho justo de la palabra "Enviar" */
   background-color: green; /* Cambio de color del botón a verde claro */
-  color: yellow;
+  color: #e3ebc6;
   border: none;
   border-radius: 5px;
   cursor: pointer;
