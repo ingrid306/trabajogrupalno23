@@ -34,11 +34,6 @@
   margin: 20px;
 }
 
-.enlace {
-  color: rgb(220, 235, 223); 
-}
-
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
