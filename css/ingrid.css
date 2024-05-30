@@ -27,6 +27,14 @@
   padding: 5% 5px;  
 
 }
+.parrafo {
+  color: rgb(220, 235, 223);
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px;
+}
+
+
 
 .gallery {
   display: grid;
@@ -68,12 +76,6 @@
   transform: none;
 }
 
-p {
-  color: rgb(220, 235, 223);
-  font-size: 20px;
-  text-align: justify;
-  margin: 20px;
-}
 
 h1 {
   color: rgb(240, 238, 238);
