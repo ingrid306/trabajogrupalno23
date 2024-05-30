@@ -28,16 +28,6 @@
 
 }
 
-
-.texto {
-  color: var(--ColorEncabezado);
-  text-indent: 25px;
-  line-height: 1.5;
-  /* margin-top: 8%; */
-  padding: 10% 15px; 
-} 
-
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
