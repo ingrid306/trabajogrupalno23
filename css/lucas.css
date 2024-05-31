@@ -165,9 +165,13 @@ main{
   left: 0px;
 }
 
+@font-face {
+  font-family: Futurist Fixed-width;
+  src: url("Futurist Fixed-width.ttf");
+}
+
 .instantefont{ 
-  font-family: "Futurist fixed-width";
-  src: url(../trabajogrupalno23/Fontlucas/FUTRFW.TTF) format('truetype');
+  font-family: Futurist Fixed-width;
   font-size: 70px;
 }
 
@@ -682,6 +686,7 @@ footer {
   .card {
     position: relative;
     top: 20px;
+    margin: 0px;
 }
   .card img{
     width: 100%;
@@ -724,10 +729,10 @@ footer {
     bottom: 0px;
   }
 
-  .card {
+  /* .card {
     position: relative;
     top: -50px;
     width: 100%;
 
-}
+} */
 }
