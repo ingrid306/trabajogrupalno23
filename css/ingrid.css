@@ -27,16 +27,12 @@
   padding: 5% 5px;  
 
 }
-
-
-.texto {
-  color: var(--ColorEncabezado);
-  text-indent: 25px;
-  line-height: 1.5;
-  /* margin-top: 8%; */
-  padding: 10% 15px; 
-} 
-
+.parrafo {
+  color: rgb(220, 235, 223);
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px;
+}
 
 .gallery {
   display: grid;
@@ -78,12 +74,6 @@
   transform: none;
 }
 
-p {
-  color: rgb(220, 235, 223);
-  font-size: 20px;
-  text-align: justify;
-  margin: 20px;
-}
 
 h1 {
   color: rgb(240, 238, 238);

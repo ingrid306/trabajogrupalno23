@@ -1,4 +1,11 @@
 /* Estilos generales */
+:root {
+  --ColorEncabezado: #07531a;
+  --ColorFondo: #f7faf9;
+  --ColorFuente: #e3ebc6;
+  --ColorLink: #c813ec;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,10 +14,12 @@ body {
 }
 
 .container {
-  max-width: 500px; /* Ajuste para hacer el formulario más grande */
+  max-width: 500px;
+  /* Ajuste para hacer el formulario más grande */
   margin: 50px auto;
   padding: 20px;
-  background-color: #07531a; /* Cambio de color de fondo */
+  background-color: #07531a;
+  /* Cambio de color de fondo */
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -20,7 +29,7 @@ h2 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: italic;
-  color: #141413; 
+  color: var(--ColorFuente);
 }
 
 .form-group {
@@ -32,8 +41,10 @@ label {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 5px; /* Ajuste para separar los labels del input */
-  color: #e3ebc6; /* Cambio de color de texto para que se vea mejor en el fondo oscuro */
+  margin-bottom: 5px;
+  /* Ajuste para separar los labels del input */
+  color: var(--ColorFuente);
+  /* Cambio de color de texto para que se vea mejor en el fondo oscuro */
 }
 
 input[type="text"],
@@ -41,27 +52,35 @@ input[type="email"],
 textarea,
 select,
 input[type="file"] {
-  width: calc(100% - 20px); /* Cambio para tener en cuenta el padding */
+  width: calc(100% - 20px);
+  /* Cambio para tener en cuenta el padding */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box; /* Para incluir el padding en el cálculo del ancho */
-  background-color: #fff; /* Cambio de color de fondo para los inputs */
+  box-sizing: border-box;
+  /* Para incluir el padding en el cálculo del ancho */
+  background-color: #fff;
+  /* Cambio de color de fondo para los inputs */
 }
 
 button.enviar-btn {
-  display: inline-block; /* Hace que el botón sea de tamaño automático */
-  padding: 10px 20px; /* Ajuste para que el botón tenga el ancho justo de la palabra "Enviar" */
-  background-color: green; /* Cambio de color del botón a verde claro */
+  display: inline-block;
+  /* Hace que el botón sea de tamaño automático */
+  padding: 10px 20px;
+  /* Ajuste para que el botón tenga el ancho justo de la palabra "Enviar" */
+  background-color: green;
+  /* Cambio de color del botón a verde claro */
   color: #e3ebc6;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 auto; /* Centra el botón horizontalmente */
+  margin: 0 auto;
+  /* Centra el botón horizontalmente */
 }
 
 button.enviar-btn:hover {
-  background-color: #689f38; /* Cambio de color de fondo al pasar el ratón por encima */
+  background-color: #689f38;
+  /* Cambio de color de fondo al pasar el ratón por encima */
 }
 
 .radio-group input[type="radio"] {
@@ -71,20 +90,24 @@ button.enviar-btn:hover {
 
 .radio-group label {
   display: inline-block;
-  margin-right: 10px; /* Ajusta el espacio entre los radio buttons y sus etiquetas */
+  margin-right: 10px;
+  /* Ajusta el espacio entre los radio buttons y sus etiquetas */
   vertical-align: middle;
 }
 
 /* Media query para ajustar el margen del contenedor en dispositivos pequeños */
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 400px; /* Ajuste para dispositivos medianos */
+    max-width: 400px;
+    /* Ajuste para dispositivos medianos */
   }
 }
 
 @media screen and (max-width: 480px) {
   .container {
-    max-width: 300px; /* Ajuste para dispositivos pequeños (móviles) */
-    padding: 10px; /* Reducir el relleno para dispositivos pequeños */
+    max-width: 300px;
+    /* Ajuste para dispositivos pequeños (móviles) */
+    padding: 10px;
+    /* Reducir el relleno para dispositivos pequeños */
   }
 }
